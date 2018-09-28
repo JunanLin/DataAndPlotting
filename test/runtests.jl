@@ -1,3 +1,4 @@
 using DataAndPlotting
+
 arr = initialize()
-output(arr,"/tmp/array.h5")
+output(arr,"../temp/array.h5")

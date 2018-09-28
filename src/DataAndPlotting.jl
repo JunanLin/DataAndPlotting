@@ -1,4 +1,5 @@
 module DataAndPlotting
+using HDF5
 
 const ki = 3
 const kj = 3
@@ -26,7 +27,7 @@ end
 
 #write data to file
 export output
-function output(arr::Array[Float64,2],filename::String)
+function output(arr::Array{Float64,2},filename::String)
   h5write(filename,"data",arr)
 end
 
