@@ -1,2 +1,3 @@
 using DataAndPlotting
-@show initialize()
+arr = initialize()
+output(arr,"/tmp/array.h5")
